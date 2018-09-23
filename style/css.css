@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bahnschrift';
+}
+
+body {
+    height: 100vh;
+}
+
+.preview {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(255, 199, 101);
+}
+
+.preview>.title {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 400;
+    font-family: 'sthupo';
+    margin-top: 20px;
+}
+
+.preview>.doraemon {
+    width: 288px;
+    height: 288px;
+    border-radius: 50%;
+    border: 3px solid rgb(51, 51, 51);
+    background: rgb(5, 208, 255);
+    overflow: hidden;
+    position: relative;
+}
+
+.preview>.doraemon>.head {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: rgb(1, 169, 219);
+    position: absolute;
+    top: 22px;
+}
+
+.preview>.doraemon>.face {
+    height: 210px;
+    width: 234px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 66px;
+    left: 50%;
+    margin-left: -117px;
+    border: 3px solid rgb(51, 51, 51);
+}
+
+.preview>.doraemon>.eyes {
+    display: flex;
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    margin-left: -62px;
+}
+
+.preview>.doraemon>.eyes>.eyes-left,
+.preview>.doraemon>.eyes>.eyes-right {
+    height: 72px;
+    width: 62px;
+    border-radius: 50%;
+    border: 3px solid rgb(51, 51, 51);
+    background: #fff;
+    position: relative;
+}
+
+.preview>.doraemon>.eyes>.eyes-right {
+    margin-left: -1px;
+}
+
+.preview>.doraemon>.eyes>.eyes-left::before,
+.preview>.doraemon>.eyes>.eyes-right::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 23px;
+    height: 29px;
+    border-radius: 50%;
+    margin-top: -13px;
+    background: rgb(51, 51, 51);
+    top: 50%;
+}
+
+.preview>.doraemon>.eyes>.eyes-left::before {
+    right: 4px;
+}
+
+.preview>.doraemon>.eyes>.eyes-right::before {
+    left: 4px;
+}
+
+.preview>.doraemon>.eyes>.eyes-left::after,
+.preview>.doraemon>.eyes>.eyes-right::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    background: #fff;
+}
+
+.preview>.doraemon>.eyes>.eyes-left::after {
+    right: 8px;
+}
+
+.preview>.doraemon>.eyes>.eyes-right::after {
+    left: 8px;
+}
+
+.preview>.doraemon>.nose {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    border: 4px solid rgb(51, 51, 51);
+    background: rgb(204, 61, 24);
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    overflow: hidden;
+}
+
+.preview>.doraemon>.nose::before {
+    content: '';
+    display: block;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background: rgb(234, 76, 26);
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    margin-left: -22px;
+}
+
+.preview>.doraemon>.nose::after {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 18px;
+    border-radius: 50%;
+    background: rgb(255, 93, 71);
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    margin-left: -9px;
+}
+
+.preview>.doraemon>.mouth-left,
+.preview>.doraemon>.mouth-right {
+    height: 65px;
+    width: 98px;
+    border: 3px solid black;
+    border-top: none;
+    position: absolute;
+    top: 132px;
+}
+
+.preview>.doraemon>.mouth-left {
+    left: 44px;
+    border-right: none;
+    border-bottom-left-radius: 105px 70px;
+}
+
+.preview>.doraemon>.mouth-right {
+    right: 45px;
+    border-left: none;
+    border-bottom-right-radius: 105px 70px;
+}
+
+.preview>.doraemon>.mouth-left::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 70px;
+    width: 4px;
+    background: rgb(51, 51, 51);
+    right: 0;
+    top: 50%;
+    transform: translate(0, -38px);
+}
+
+.preview>.doraemon>.beard {
+    width: 265px;
+    height: 58px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.preview>.doraemon>.beard>div {
+    position: absolute;
+    border: 2px solid rgb(51, 51, 51);
+    border-radius: 5px;
+}
+
+.preview>.doraemon>.beard>.left-one {
+    width: 64px;
+    left: 0;
+    top: 5px;
+    transform: rotate(23deg);
+}
+
+.preview>.doraemon>.beard>.right-one {
+    width: 64px;
+    right: 0;
+    top: 5px;
+    transform: rotate(-23deg);
+}
+
+.preview>.doraemon>.beard>.left-two {
+    width: 61px;
+    top: 50%;
+    left: 0;
+}
+
+.preview>.doraemon>.beard>.right-two {
+    width: 61px;
+    top: 50%;
+    right: 0;
+}
+
+.preview>.doraemon>.beard>.left-three {
+    width: 61px;
+    bottom: 5px;
+    left: 2px;
+    transform: rotate(-18deg);
+}
+
+.preview>.doraemon>.beard>.right-three {
+    width: 61px;
+    bottom: 5px;
+    right: 2px;
+    transform: rotate(18deg);
+}
+
+.preview>.necklace-wrapper {
+    height: 60px;
+    width: 190px;
+    border-radius: 20px;
+    background: rgb(255, 199, 101);
+    border-top: 3px solid rgb(51, 51, 51);
+    margin-top: -44px;
+    z-index: 1;
+    position: relative;
+}
+
+.preview>.necklace-wrapper>.necklace {
+    height: 28px;
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid rgb(51, 51, 51);
+    background: rgb(201, 69, 63);
+    position: absolute;
+    top: -4px;
+    left: 0;
+}
+
+.preview>.necklace-wrapper>.bell>.bell-circle {
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    border: 3px solid rgb(51, 51, 51);
+    position: absolute;
+    left: 50%;
+    top: -3px;
+    margin-left: -29px;
+    background: rgb(249, 217, 137);
+    overflow: hidden;
+}
+
+.preview>.necklace-wrapper>.bell>.bell-circle::before {
+    content: '';
+    display: block;
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 6px;
+    margin-left: -29px;
+    background: rgb(251, 200, 61)
+}
+
+.preview>.necklace-wrapper>.bell>.bell-circle::after {
+    content: '';
+    display: block;
+    height: 0px;
+    width: 30px;
+    border-radius: 50px;
+    border-top: none;
+    border-left: none;
+    border: 3px solid rgb(211, 164, 53);
+    position: absolute;
+    left: 72%;
+    bottom: 0;
+    margin-left: -29px;
+}
+
+.preview>.necklace-wrapper>.bell>.bell-cross {
+    height: 16px;
+    width: 62px;
+    border: 3px solid rgb(51, 51, 51);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    margin-left: -31px;
+    top: 18px;
+    background: rgb(249, 217, 137);
+    overflow: hidden;
+}
+
+.preview>.necklace-wrapper>.bell>.bell-cross::before {
+    content: '';
+    display: block;
+    height: 16px;
+    width: 62px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    margin-left: -31px;
+    top: 2px;
+    background: rgb(251, 200, 61);
+}
+
+.preview>.necklace-wrapper>.bell>.bell-vertical {
+    height: 12px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid rgb(51, 51, 51);
+    background: rgb(191, 144, 42);
+    position: absolute;
+    top: 50%;
+    margin: 7px 0 0 -10px;
+    left: 50%;
+}
+
+.preview>.necklace-wrapper>.bell>.bell-vertical::after {
+    content: '';
+    display: block;
+    height: 8px;
+    width: 4px;
+    border-radius: 5px;
+    background: rgb(51, 51, 51);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 5px 0 0 -2px;
+}
