@@ -3,14 +3,25 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Bahnschrift';
+    transition: all 0.5s;
 }
 
 body {
     height: 100vh;
 }
-
-.preview {
+.code-preview{
+    height:30%;
+    background: rgba(210,210,210,0.5);
+    color:rgb(243, 31, 190);
+    overflow: hidden;
+}
+#code{
     height: 100%;
+    overflow: hidden;
+    padding:10px 0 0 40px;
+}
+.preview {
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,9 +34,9 @@ body {
     font-size: 55px;
     font-weight: 400;
     font-family: 'sthupo';
-    margin-top: 20px;
+    margin-top: 15px;
 }
-
+/*
 .preview>.doraemon {
     width: 288px;
     height: 288px;
@@ -161,7 +172,7 @@ body {
 
 .preview>.doraemon>.mouth-left,
 .preview>.doraemon>.mouth-right {
-    height: 65px;
+    height: 70px;
     width: 98px;
     border: 3px solid black;
     border-top: none;
@@ -185,7 +196,7 @@ body {
     content: '';
     display: block;
     position: absolute;
-    height: 70px;
+    height: 72px;
     width: 4px;
     background: rgb(51, 51, 51);
     right: 0;
@@ -362,4 +373,4 @@ body {
     top: 50%;
     left: 50%;
     margin: 5px 0 0 -2px;
-}
+}*/
