@@ -163,7 +163,7 @@ var styleCode = `
     content: '';
     display: block;
     position: absolute;
-    height: 72px;
+    height: 74px;
     width: 4px;
     background: rgb(51, 51, 51);
     right: 0;
